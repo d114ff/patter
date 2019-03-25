@@ -1,0 +1,205 @@
+#encoding: utf-8
+name = input('请输入你的名字')
+print('你的名字是:',name)
+age = 20
+height = 176
+integer = 120
+print(int(age),int(height),int(integer))
+
+age = 20
+height = 176
+integer = 120
+height = height + 2
+integer = integer * 3
+age = age * 4
+print(age,height,integer)
+
+name = input("请输入您的名字:")
+age = input("请输入你的年龄:")
+print(type(name))
+print("你的年龄是:" + " " + age + " " + "你的名字是" + " " + name)
+
+num1 = input("请输入一个数字:")
+num2 = input("请输入二个数字:")
+print( 'num1 + num2 =',float(num1) + float(num2))
+print( 'num1 - num2 =',float(num1) - float(num2))
+print( 'num1 * num2 =',float(num1) * float(num2))
+print( 'num1 / num2 =',float(num1) / float(num2))
+
+is_boy = True
+is_gril = False
+print(is_boy,is_gril)
+print(True + False)
+print(True - False)
+print(True * False)
+print(True - True)
+print(True * True)
+print(True / True)
+print(True + True)
+
+print(type(int(True)))
+
+print(bool(1))
+print(bool(0))
+
+print(type(str(True)))
+print(type(str(False)))
+
+print(True and False)
+print(True and True)
+print(False and False)
+
+print(True or False)
+print(True or True)
+print(False or False)
+
+wife = input("是否看见西瓜:(Y/N)")
+money = 100
+print("买个包子")
+money = money - 10
+if wife == 'Y':
+    #if语句是缩进
+    print("买个西瓜")
+    money = money - 20
+print("剩余" + str(money) + "元")
+# 丈夫
+wife = input("是否看见西瓜:(Y/N)")
+money = 100
+if wife == 'Y':
+    print("买一个")
+    money = money - 3
+    print("剩余" + str(money) + "元")
+else:
+    print("买三个包子")
+    money = money - 10
+    print("剩余" + str(money) + "元")
+
+grade = int(input("请输入分数:"))
+if grade >= 90 and grade <= 120:
+    print("您的分数" + str(grade) + "等级A")
+elif grade >= 80 and grade < 90:
+    print("您的分数" + str(grade) + "等级B")
+elif grade >= 70 and grade < 80:
+    print("您的分数" + str(grade) + "等级C")
+elif grade >= 60 and grade < 70:
+    print("您的分数" + str(grade) + "等级D")
+elif grade < 60  and grade > 0:
+    print("您的分数" + str(grade) + "等级E")
+else:
+    print("输入错误")
+
+i = 1
+i += 2
+print(i)
+
+wife = input("是否看见西瓜:(Y/N)")
+money = 100
+print("买个包子")
+money -=  10
+if wife == 'Y':
+    #if语句是缩进
+    print("买个西瓜")
+    money = money - 20
+print("剩余" + str(money) + "元")
+
+year = int(input("请输入年份:"))
+if year % 4 == 0 and year % 100 != 0 :
+    print("是闰年")
+elif year % 400 == 0:
+    print("是闰年")
+else:
+    print("不是闰年")
+
+year = int(input("请输入年份:"))
+if year % 4 == 0 and year % 100 != 0 :
+    print("是闰年")
+elif year % 400 == 0:
+    print("是闰年")
+else:
+    print("不是闰年")
+
+year = int(input("请输入年份:"))
+if year % 4 == 0 and year % 100 != 0 or  year % 400 == 0:
+    print("是闰年")
+else:
+    print("不是闰年")
+
+index = 0
+idex = 1
+while idex <= 100:
+    index += idex
+    idex += 1
+print(index)
+
+a = 0
+b = 0
+c = " "
+while c != 'exit':
+    c = input("请输入数字:")
+    if c != 'exit':
+        a += float(c)
+        b += 1
+if c != 0:
+    print("数字之和:",a ,"平均数", a / b)
+else:
+    print("数字之和:",a ,"平均数", 0)
+
+iDx = 0
+mAx_iDx = 5
+print('break')
+while iDx <= mAx_iDx:
+    iDx += 1
+    if iDx == 3:
+        break
+    print(iDx)
+
+
+iDx = 0
+mAx_iDx = 5
+print('continue')
+while iDx <= mAx_iDx:
+    iDx += 1
+    if iDx == 3:
+        continue
+    print(iDx)
+
+sUmx = 0
+cOunt = 0
+while True:
+    inPut_tExt = input('请输入一个数字或exit(结束):')
+    if inPut_tExt == 'exit':
+        break
+    sUmx += float(inPut_tExt)
+    cOunt += 1
+if inPut_tExt == 0:
+    print("数字之和", 0, "平均数:", 0)
+else:
+    print("数字之和",sUmx ,"平均数:",sUmx / cOunt)
+
+i = 1
+while i <= 9:
+    j = 1
+    while j <= i:
+        print(str(i) + " * " + str(j) + "=" ,i * j,end = " ")
+        j += 1
+    print(' ')
+    i += 1
+
+
+
+i = 0
+while i < 5:
+    import random
+    randoM_num = random.randint(0,100)
+    nUm = int(input("请输入一个数字:"))
+    if nUm < randoM_num:
+        print("猜小了")
+    elif nUm > randoM_num:
+        print("猜大了")
+    else:
+        print("猜对了")
+    i += 1
+    if i == 5:
+        print("太笨了,下次再来")
+        break
+
